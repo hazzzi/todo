@@ -8,8 +8,8 @@ function TodoItem(props) {
                 JsxRuntime.jsxs("div", {
                       children: [
                         JsxRuntime.jsx("input", {
+                              defaultChecked: props.completed,
                               className: "mr-2",
-                              checked: props.completed,
                               type: "checkbox"
                             }),
                         JsxRuntime.jsx("span", {
